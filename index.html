@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-<link rel="stylesheet" href="jquery.mobile-1.3.1.min.css">
-    <script src="jquery-1.8.3.min.js"></script>
-    <script src="chromeFileProtocolFix.js"></script>
-    <script src="jquery.mobile-1.3.1.min.js"></script>
-    <script type='text/javascript' src='app.js'></script>
+<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
+    <script src="scripts/jquery-1.8.3.min.js"></script>
+    <script src="scripts/chromeFileProtocolFix.js"></script>
+    <script src="scripts/jquery.mobile-1.3.1.min.js"></script>
+    <script type='text/javascript' src='scripts/app.js'></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
@@ -18,7 +18,7 @@
         <div data-role="fieldcontain">
           <label id="inputLabel">Priority </label>
           <input type="number" id="memoAmount" name="memoAmount" style="display:block">
-          <input type="number" id="priorityAmount" name="priorityAmount" style="display:none">
+          <input type="number" id="priorityAmount" name="priorityAmount" style="display:none;background-color: grey">
         </div>
 
 
@@ -26,9 +26,9 @@
         <fieldset data-role="controlgroup">
           <legend>Choose a memo to write a memo and a priority to assign
           a priority to the memo</legend>
-          <input type="radio" name="units" id="memo" value="memo" checked="checked">
+          <input type="radio" name="units" id="memo" value="memo" checked="checked" onclick = yesnoCheck()>
           <label for="memo">Memo</label>
-          <input type="radio" name="units" id="priority" value="priority">
+          <input type="radio" name="units" id="priority" value="priority" onclick = yesnoCheck()>
           <label for="priority">Priority</label>
         </fieldset>
         <input type="button" id="enter" value="Enter Memo and Priority"><br />
