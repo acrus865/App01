@@ -1,71 +1,76 @@
 function setup() {
   var amountInput = document.getElementById("amount");
-
+}
 
   function yesnoCheck() {
    if (document.getElementById('memo').checked) {
-       document.getElementById('memo').style.display = 'block';
-   }
-   else {document.getElementById('memo').style.display = 'none';}
+       document.getElementById('memoAmount').style.display = 'block';
+       document.getElementById('priorityAmount').style.display = 'none';}
+   
+   else {document.getElementById('memoAmount').style.display = 'none';
+        document.getElementById('memoPriority').style.display = 'block';}
 }
 
 
-  // document.getElementById("memo").onclick =
-  //   function () {
-  //
-  //     if (memo.checked) {
-  //
-  //       memoStorage = document.getElementById("amount").value;
-  //
-  //       setLabel("Memo ");
-  //     }
-  //
-  //   };
-  // document.getElementById("priority").onclick =
-  //   function () {
-  //
-  //
-  //     if (priority.checked) {
-  //
-  //       priorityStorage = document.getElementById("amount").value;
-  //
-  //       setLabel("Priority ");
-  //     }
-  //
-  //   };
-  document.getElementById("enter").onclick =
-    function () {
-      var table = document.getElementById('tableOne');
+//   document.getElementById("memo").onclick =
+//     function () {
+  
+//       if (memo.checked) {
+  
+//         memoStorage = document.getElementById("amount").value;
+  
+//         setLabel("Memo ");
+//       }
+  
+//     };
+//   document.getElementById("priority").onclick =
+//     function () {
+  
+  
+//       if (priority.checked) {
+  
+//         priorityStorage = document.getElementById("amount").value;
+  
+//         setLabel("Priority ");
+//       }
+  
+//     };
+  
+  
+  
+//   document.getElementById("enter").onclick =
+//     function () {
+//       var table = document.getElementById('tableOne');
 
-      var row = table.insertRow();
+//       var row = table.insertRow();
 
-      var cell1 = row.insertCell(rowNumber);
-      var cell2 = row.insertCell(memo);
-      var cell3 = row.insertCell(priority);
+//       var cell1 = row.insertCell(rowNumber);
+//       var cell2 = row.insertCell(memo);
+//       var cell3 = row.insertCell(priority);
 
-      document.getElementById("memo").value = "";
-      document.getElementById("priority").value = "";
-    };
-
-
-
-
-}
+//       document.getElementById("memo").value = "";
+//       document.getElementById("priority").value = "";
+//     };
 
 
 
-function setLabel(newLabel) {
-  var label = document.getElementById("inputLabel");
-  label.innerHTML = newLabel;
-}
 
-function storeMemo(input) {
-  var storage = input;
-}
+// }
 
-function storePriority(input) {
-  var storage = input;
-}
+
+
+// function setLabel(newLabel) {
+//   var label = document.getElementById("inputLabel");
+//   label.innerHTML = newLabel;
+// }
+
+// function storeMemo(input) {
+//   var storage = input;
+// }
+
+// function storePriority(input) {
+//   var storage = input;
+// }
 
 // function store() {
 //   var memoText = memo.innerHTML;
