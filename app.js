@@ -1,15 +1,24 @@
 function setup() {
   var amountInput = document.getElementById("amount");
+
+
+  document.addEventListener("", yesnoCheck)
+
+  //addevent listener
 }
 
-  function yesnoCheck() {
+function yesnoCheck() {
    if (document.getElementById('memo').checked) {
        document.getElementById('memoAmount').style.display = 'block';
        document.getElementById('priorityAmount').style.display = 'none';}
    
    else {document.getElementById('memoAmount').style.display = 'none';
-        document.getElementById('memoPriority').style.display = 'block';}
+        document.getElementById('priorityAmount').style.display = 'block';}
 }
+
+document.on
+
+
 
 
 //   document.getElementById("memo").onclick =
