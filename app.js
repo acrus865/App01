@@ -2,8 +2,6 @@ function setup() {
   var amountInput = document.getElementById("amount");
 
 
-  document.addEventListener("", yesnoCheck)
-
   //addevent listener
 }
 
@@ -16,7 +14,6 @@ function yesnoCheck() {
         document.getElementById('priorityAmount').style.display = 'block';}
 }
 
-document.on
 
 
 
